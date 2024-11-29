@@ -1,0 +1,182 @@
+@charset "utf-8";
+@import "mobil.css" screen and (max-width:768px);
+/*@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,700&display=swap");*/
+@font-face {
+  font-family:"Morning Starboy" ;
+  src:url(estilos/fuentes/MorningStarboy.otf)
+}
+@font-face {
+  font-family:"Daughter Fortune";
+  src:url(estilos/fuentes/DaughterFortune.ttf)
+}
+html body {
+   height: 100%;
+   margin: 0px;
+}
+/*actual boostrap*/
+body {
+  background-color: #20232a;
+  color: #61dafb;
+}
+.navbar-brand {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.jumbotron {
+  background: linear-gradient(45deg, #333, #444);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+.news-card {
+    background-color: #333;
+    border-radius: 8px;
+    color: #ddd;
+}
+.footer {
+  background-color: #222;
+  color: #61dafb;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+ /* estilos para el header*/
+header {
+	display: flex;
+    margin: 0 auto 10px;
+	/*background-image:url(../imagenes/fondo-header.jpg);*/
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding: 0;
+	}
+	
+#logo{ width:250px; text-align:center; float:left;}
+  #backgroundImage { /* hecho en class*/
+    border: none;
+    height: 100%;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+    width: 100%;
+  }
+  nav{}
+  h1{
+    color:#fff;
+    font-size: 45px;
+  }
+  ul li{
+    display: inline-block;
+    padding: 0px 20px;
+  }
+
+/*practica4 16-sep*/
+/* estilos para la barra lateral izquierda y derecha*/
+
+#columna-izquierda{ 
+width:70%; 
+float:left;
+}
+
+/* estilos para las notas*/
+
+ article{ display:block; margin-bottom:20px; padding: 10px 5px;}
+
+ article img{ width:50%; margin-bottom:10px}
+  
+ article h2 { text-transform: uppercase; margin-bottom:10px; background: #ccc;} 
+ 
+ span.fecha{font-size:10px; display: block;}
+ 
+ article p {text-align: justify; margin-bottom:10px;} 
+
+/* fins estilos para las notas*/
+
+aside{}
+
+/* FIN estilos para la barra lateral izquierda y derecha*/
+/*practica 5 */
+#slogan h2{
+  font-family: "Morning Starboy";}
+article h3 {
+  font-family: "Daughter Fortune";}
+article p {.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;}}
+/*practica 6  30-sep */
+/* seudo codigos y seudo clases*/
+nav li a:hover{ }
+nav li a {}
+nav li:first-child{
+  background:hsl(220, 8%, 85%) ;}
+#contenedor section:first-child{
+  background:rgb(231, 187, 149) ;}
+article p::first-line{
+  text-transform : uppercase;
+  background: #ccc;
+  padding: 3px;}
+
+article p::first-letter{
+  font-size:50px;
+  background:#430;
+  color:#fff;
+  padding : 4px;
+  float :left;
+  margin-right:5px;
+  font-family: arial;}
+#slogan h1::before{
+  content: "Bienvenido";
+  font-weight: 700;}
+#slogan h1::after{
+  content: url(../imagenes/logo.jpg);
+.imagen-tamaño{
+  width: 300px ;
+  height: 200px;}}
+nav li{
+  border:2px #ccc solid;
+  border-radius: 15px;}
+/*Practia7*/
+section[id]{
+  scroll-margin-top:70px ;}
+#botones{vertical-align: top;}
+#botones ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;}
+#botones li {
+  display: inline-block;
+  margin-right: 5px; }
+#botones img {
+  float: left;}
+
+.clear {
+  clear: both;}
+/* registra tu email */
+.widget {
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+.widget h3 {
+  text-align: center;
+}
+.widget form {
+  display: flex; flex-direction: column; gap: 10px;}
+.widget label, .widget input {
+  width: 100%;
+}
+.widget input[type="submit"] {
+  width: auto;
+  align-self: center; padding: 5px 20px; cursor: pointer;}
+
+/*inicio pie de pagi*/
+.prepagina {
+  display: flex; justify-content: space-between;}
+.footer-widget {width: 45%;}
+
+/* boton whatsapp */
+#whatsapp{ width: 70px;
+  position: fixed;
+  bottom: 10px;right: 10px;}
